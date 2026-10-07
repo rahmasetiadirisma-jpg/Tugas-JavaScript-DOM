@@ -1,0 +1,333 @@
+*{margin: 0;}
+
+#navbar{
+    background-color:rgb(109, 2, 109);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 80px;
+    box-shadow: 0 2px 5px rgba(18, 2, 2, 0.331)
+}
+
+#navbar h1 {
+    color: white;
+    font-size: 35px;
+}
+.link-navbar a{
+ text-decoration:underline;
+    font-size: 16px;
+    color: #c88fe9;
+    margin-left: 15px;
+     transition: background-color 0.10s ease;
+ }
+  .link-navbar a:hover {
+    background-color: #c88fe9;
+    color: rgb(109, 2, 109);
+}
+ #risma{
+    background: linear-gradient(to bottom, rgb(128, 28, 128), rgb(255, 206, 255), rgb(172, 100, 172));
+    display: flex;
+    align-items: center; 
+    padding: 80px;
+    flex-wrap:wrap-reverse;
+    justify-content: space-evenly;
+    animation: muncul 1s ease;
+}
+
+.kotak{
+    background:linear-gradient(to top, rgba(148, 8, 148, 0.443), rgb(244, 150, 244), rgb(147, 100, 147));
+    padding: 20px;
+    border: 2px solid rgb(109, 2, 109);
+    margin: 20px;
+    border-radius: 10px;
+    width: 400px;
+}
+.kotak p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(210, 101, 220);
+    font-size: 15px;
+}
+
+
+.preview-box {
+    background-color: #f2b0ff;
+    border: 2px dashed #f6cefd;
+    border-radius: 8px;
+    padding: 1.25rem;
+    text-align: center;
+    margin-bottom: 1.25rem;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.preview-box p {
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+
+.card.highlight {
+    background-color: #e0c6f4;
+    border-color: #d159fd;
+}
+
+.preview-box.active-mode {
+    background-color: #c057f0e3;
+    border-color: hsl(272, 83%, 46%);
+    color: #5e3574;
+} 
+.button-group {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: nowrap;
+}
+
+.btn {
+    padding: 0.65rem 1.2rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: rgb(57, 14, 77);
+}
+.btn-primary:hover {
+    background-color: #f1f5f9;
+    color: var(--text-dark);
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    color: rgb(51, 26, 54);
+}
+.btn-secondary:hover {
+    background-color: #f1f5f9;
+    color: var(--text-dark);
+}
+
+.btn-success {
+    background-color: white;
+    color: rgb(19, 11, 11);
+}
+.btn-success:hover {
+    background-color: #f1f5f9;
+    color: var(--text-dark);
+}
+
+.btn-outline {
+    background-color:transparent;
+    border: 1px solid var(--border-color);
+    color: var(--text-muted);
+}
+.btn-outline:hover {
+    background-color: #f1f5f9;
+    color: var(--text-dark);
+}
+.btn-reset-list {
+    background-color: #f1f5f9;
+    color:black;
+}
+
+#card-dinamis{
+    background-color:rgb(227, 150, 227);
+}
+
+.input-wrapper {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.input-wrapper input {
+    flex: 1;
+    padding: 0.65rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.input-wrapper input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
+}
+.list-container h3 {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+    color: rgb(172, 88, 214)
+
+}
+
+.note-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.note-item {
+    background-color: #f8fafc;
+    border: 1px solid var(--border-color);
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: fadeIn 0.3s ease;
+}
+
+.note-item .btn-hapus {
+    background-color: #fee2e2;
+    color: var(--danger-color);
+    border: none;
+    padding: 0.25rem 0.6rem;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.note-item .btn-hapus:hover {
+    background-color: #ecdfdf;
+    color: #6b666c;
+}
+
+.empty-state {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    font-style: italic;
+    padding: 1.5rem 0;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.back-home {
+    color: rgb(237, 108, 237);
+    padding: 10px;
+    margin: 30px 80px;
+    transition: background-color 0.3s ease;
+}
+
+.back-home:hover {
+    background-color: #c88fe9;
+    color: rgb(224, 67, 224);
+}
+
+.akhir {background-color: rgb(255, 206, 255);}
+@keyframes muncul {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+body.mode-malam {
+    background-color: #4c0075;
+    color: white;
+}
+
+body.mode-malam #navbar {
+    background-color: #701f9c;
+}
+
+body.mode-malam #risma {
+    background: linear-gradient(
+        to bottom,
+        #42015f,
+        hsl(282, 75%, 49%),
+        #160d1a
+    );
+}
+
+body.mode-malam .kotak {
+    background-color: #35203d;
+    border-color: #8e44ad;
+}
+
+body.mode-malam .kotak p {
+    color: white;
+}
+
+body.mode-malam .preview-box {
+    background-color: #42244d;
+    border-color: #8e44ad;
+}
+
+body.mode-malam .preview-box p {
+    color: white;
+}
+
+body.mode-malam #card-dinamis {
+    background-color: #2d1b35;
+    color: white;
+}
+
+body.mode-malam #card-dinamis h2,
+body.mode-malam #card-dinamis p,
+body.mode-malam #card-dinamis h3 {
+    color: white;
+}
+
+body.mode-malam .input-wrapper input {
+    background-color: #3f015e;
+    color: white;
+    border-color: #8e44ad;
+}
+
+body.mode-malam .note-item {
+    background-color: #390055;
+    color: white;
+    border-color: #8e44ad;
+}
+
+body.mode-malam .empty-state {
+    color: #d8bde0;
+}
+
+body.mode-malam .akhir {
+    background-color: #260e30;
+    color: white;
+}
+
+body.mode-malam .back-home {
+    color: #d8a5ed;
+}
+
+.btn-mode {
+    background-color: transparent;
+    color: white;
+    border: 1px solid #c88fe9;
+    padding: 5px 10px;
+    margin-left: 15px;
+}
+
+.btn-mode:hover {
+    background-color: #c88fe9;
+    color: rgb(109, 2, 109);
+}
+body.mode-malam .btn-primary {
+    color: #f0caff;
+}
+
+body.mode-malam .btn-secondary {
+    color: #f0caff;
+}
+
+body.mode-malam .btn-outline {
+    color: #f0caff;
+}

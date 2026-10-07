@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+}
+
+
+#navbar {
+    background-color: rgb(109, 2, 109);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 80px;
+}
+
+#navbar h1 {
+    color: white;
+    font-size: 35px;
+}
+
+.link-navbar a {
+    text-decoration: underline;
+    font-size: 16px;
+    color: #c88fe9;
+    margin-left: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.link-navbar a:hover {
+    background-color: #c88fe9;
+    color: rgb(109, 2, 109);
+}
+
+body {
+    background: linear-gradient(
+        to bottom,
+        rgb(128, 28, 128),
+        rgb(255, 206, 255),
+        rgb(172, 100, 172)
+    );
+     min-height: 100vh;
+    animation: muncul 1s ease;
+}
+
+body  h2 {
+    color: rgb(62, 14, 65);
+    font-size: 28px;
+    margin: 30px 80px 10px 80px;
+}
+
+body  h3 {
+    color: rgb(62, 14, 65);
+    font-size: 18px;
+    margin: 10px 80px 20px 80px;
+}
+
+.project {
+    background-color: rgba(255, 206, 255, 0.7);
+    padding: 20px;
+    border: 2px solid rgb(109, 2, 109);
+    margin: 20px 80px;
+}
+
+.project img {
+    width: 240px;
+    height: 180px;
+    margin: 10px;
+}
+
+.project h3 {
+    color: rgb(62, 14, 65);
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.project p {
+    color: rgb(29, 4, 30);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular',
+        'Lucida Grande', 'Lucida Sans Unicode',
+        Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+.project a {
+    color: rgb(109, 2, 109);
+    transition: background-color 0.3s ease;
+}
+
+.project a:hover {
+    background-color: #c88fe9;
+    color: rgb(109, 2, 109);
+}
+
+
+#teknologi {
+    background-color: rgb(109, 2, 109);
+    color: white;
+    padding: 20px;
+    margin: 20px 80px;
+}
+
+#teknologi h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+#teknologi li {
+    margin: 5px;
+}
+
+
+#ringkasan {
+    margin: 20px 80px;
+}
+
+#ringkasan h2 {
+    color: rgb(62, 14, 65);
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    background-color: rgb(255, 206, 255);
+    border: 2px solid rgb(109, 2, 109);
+}
+
+th {
+    background-color: rgb(109, 2, 109);
+    color: white;
+    padding: 10px;
+}
+
+td {
+    color: rgb(29, 4, 30);
+    padding: 10px;
+    border: 1px solid rgb(109, 2, 109);
+}
+
+.kerja-sama {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+.kerja-sama a {
+    color: rgb(109, 2, 109);
+    font-size: 17px;
+    padding: 10px;
+    border: 2px solid rgb(109, 2, 109);
+    transition: background-color 0.3s ease;
+}
+
+.kerja-sama a:hover {
+    background-color: rgb(109, 2, 109);
+    color: white;
+}
+.back-home {
+    color: rgb(109, 2, 109);
+    padding: 10px;
+    margin: 30px 80px;
+    transition: background-color 0.3s ease;
+}
+
+.back-home:hover {
+    background-color: #c88fe9;
+    color: rgb(109, 2, 109);
+}
+
+.akhir {background-color: rgb(255, 206, 255);}
+@keyframes muncul {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+body.mode-malam {
+    background: linear-gradient(
+        to bottom,
+        #21002f,
+        #3b0752,
+        #160d1a
+    );
+    color: white;
+}
+
+/* NAVBAR */
+body.mode-malam #navbar {
+    background-color: #21002f;
+}
+
+/* JUDUL */
+body.mode-malam h2,
+body.mode-malam h3 {
+    color: #f0caff;
+}
+
+/* PROJECT */
+body.mode-malam .project {
+    background: linear-gradient(to top, rgba(53, 32, 61, 0.9), rgb(203, 122, 203), rgb(46, 13, 46));
+    border-color: #8e44ad;
+}
+
+body.mode-malam .project h3 {
+    color: #f0caff;
+}
+
+body.mode-malam .project p {
+    color: #f5eafa;
+}
+
+body.mode-malam .project a {
+    color: #e0a7ff;
+}
+
+body.mode-malam #teknologi {
+    background: linear-gradient(to bottom, #461859, rgb(148, 70, 148), rgb(101, 41, 101));
+    color: white;
+}
+
+body.mode-malam #teknologi h2 {
+    color: white;
+}
+
+body.mode-malam #ringkasan h2 {
+    color: #f0caff;
+}
+
+body.mode-malam table {
+    background-color: #35203d;
+    border-color: #8e44ad;
+}
+
+body.mode-malam th {
+    background-color: #21002f;
+    color: white;
+}
+
+body.mode-malam td {
+    background-color: #35203d;
+    color: #f5eafa;
+    border-color: #8e44ad;
+}
+
+body.mode-malam .kerja-sama a {
+    color: #e0a7ff;
+    border-color: #8e44ad;
+}
+
+body.mode-malam .kerja-sama a:hover {
+    background-color: #8e44ad;
+    color: white;
+}
+
+body.mode-malam .back-home {
+    color: #e0a7ff;
+}
+
+body.mode-malam .akhir {
+    background-color: #40214d,;
+    color: white;
+}
+
+.btn-mode {
+    background-color: transparent;
+    color: white;
+    border: 1px solid #c88fe9;
+    padding: 5px 10px;
+    margin-left: 15px;
+}
+
+.btn-mode:hover {
+    background-color: #c88fe9;
+    color: rgb(109, 2, 109);
+}
