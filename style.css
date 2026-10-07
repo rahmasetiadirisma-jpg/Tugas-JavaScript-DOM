@@ -35,7 +35,7 @@
 }
 
 .kotak{
-    background:linear-gradient(to top, rgba(148, 8, 148, 0.443), rgb(244, 150, 244), rgb(147, 100, 147));
+    background:linear-gradient(to top, rgba(148, 8, 148, 0.443), rgb(105, 2, 105), rgb(147, 100, 147));
     padding: 20px;
     border: 2px solid rgb(109, 2, 109);
     margin: 20px;
@@ -163,7 +163,7 @@
 .list-container h3 {
     font-size: 1rem;
     margin-bottom: 0.75rem;
-    color: rgb(172, 88, 214)
+    color: rgb(45, 0, 67)
 
 }
 
